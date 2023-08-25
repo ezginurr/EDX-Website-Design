@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.cookies-part{
+    background-color: white;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cookies-part p {
+    font-size: medium;
+    color: gray;
+}
+
+.cookies-part a {
+    color: black;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.cookies-part a:hover {
+    color: gray;
+}
+
+.row button {
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    padding: 11px;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+}
+
+.row button:hover {
+    background-color: brown;
+}
+
+@media screen and (max-width: 850px) {
+    .cookies-part{
+        flex-direction: column;
+    }
+
+    .cookies-part button {
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cookies-part button {
+        width: 70vw;
+        margin-top: 3px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

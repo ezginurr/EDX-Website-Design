@@ -1,0 +1,611 @@
+/*header*/
+.header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/*top*/
+.header-top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 50px;
+    background-color: white;
+
+}
+
+/*top-left part*/
+.top-left {
+    position: relative;
+    display: inline-block;
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+.menu-icon  {
+    display: none;
+    border: none;
+    color: white;
+}
+
+.top-left .logo {
+    /* position: absolute;
+    left: 0; */
+    cursor: pointer;
+    width: 70px;
+    
+}
+
+.top-left .courses-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+.courses-dropdown .courses-dropbtn {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+
+    height: 40px;
+    width: 70px;
+    left: 5rem;
+    padding-top: 15px;
+    margin-top: -20px;
+}
+.courses-dropdown .courses-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+
+    width: 60rem;
+    height: auto;
+    margin-top: 37px;
+    margin-left: 5rem;
+}
+.courses-dropdown-content .courses-dropdown-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+}
+.courses-dropdown-top button {
+    text-decoration: none;
+    border: 1 px solid gray;
+    cursor: pointer;
+    width: 11rem;
+    height: 2rem;
+    margin-top: 2rem;
+}
+.courses-dropdown-top button:hover {
+    background-color: black;
+    color: white;
+}
+.courses-dropdown .courses-dropdown-content a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.courses-dropdown .courses-dropdown-content a:hover {
+    text-decoration: underline;
+}
+.courses-dropdown:hover .courses-dropdown-content{
+    display: block;
+} 
+.courses-dropdown:hover .courses-dropbtn{
+    background-color: black;
+    color: white;
+}
+.courses-dropdown .courses-dropdown-content ul {
+    display: block;
+    width: 20%; 
+    float: left;
+}
+
+.top-left .programs-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+.programs-dropdown .programs-dropbtn {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+
+    height: 40px;
+    width: 150px;
+    left: 10rem;
+    padding-top: 15px;
+    margin-top: -20px;
+}
+.programs-dropdown .programs-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+
+    width: 60rem;
+    height: auto;
+    margin-top: 37px;
+    margin-left: 5rem;
+}
+.programs-dropdown-content .programs-dropdown-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+}
+.programs-dropdown-top button {
+    text-decoration: none;
+    border: 1 px solid gray;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 2rem;
+}
+.programs-dropdown-top button:hover {
+    background-color: black;
+    color: white;
+}
+.programs-dropdown:hover .programs-dropdown-content{
+    display: block;
+} 
+.programs-dropdown-content:hover {
+    display: block;
+}
+.programs-dropdown:hover .programs-dropbtn{
+    background-color: black;
+    color: white;
+}
+.programs-dropdown .programs-dropdown-content p {
+    background-color: white;
+    color: gray;
+    line-height: 0;
+    text-align: left;
+}
+.programs-dropdown .programs-dropdown-content a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.programs-dropdown .programs-dropdown-content a:hover {
+    text-decoration: underline;
+}
+.programs-dropdown-content ul {
+    display: block;
+    width: 100%; 
+    float: left;
+}
+
+
+.top-left .sch-btn {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+    left: 21rem;
+
+    margin-top: 1rem;
+    height: 39px;
+    width: 140px;
+    padding-top: 15px;
+    margin-top: -5px;
+}
+.top-left .sch-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.top-left .top-search-box {
+    /* position: absolute; */
+    background-color: white;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    /* left: 30rem; */
+}
+
+.top-left .top-search-btn {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 34, 51);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    padding: 7px;
+    top: 5px;
+    left: 37rem;
+    z-index: 10;
+}
+
+.top-left .top-search-btn:hover {
+    background-color: darkslategrey;
+}
+
+.top-left .top-search-box:focus{
+    width: 500px;
+    left: 5rem;
+    z-index: 5;
+}
+
+.top-left .top-search-box:focus + .top-search-btn{
+    display: block;
+}
+
+
+/*top-right part*/
+.top-right {
+    position: relative;
+    right: -79vw;
+}
+
+.top-right .login-part {
+    background-color: rgb(176, 187, 197);
+    position: relative;
+
+    transform: skewX(-10deg);
+    /* -webkit-transform: skew(-10deg); 
+    -moz-transform: skew(-10deg); 
+    transform: skew(-10deg); */
+
+    /* right: -79rem; */
+    height: 100px;
+    width: 300px;
+    margin-top: -2rem;
+}
+
+.login-part .register-btn {
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+
+    /* -webkit-transform: skew(-10deg); 
+    -moz-transform: skew(-10deg); 
+    transform: skew(-10deg); */
+
+    /* -- for text of button --
+    -webkit-transform: skew(10deg); 
+    -moz-transform: skew(10deg); 
+    transform: skew(10deg);
+    */
+
+    height: 20px;
+    width: 130px;
+    margin-top: 2rem;
+    right: 4rem;
+}
+
+.login-part .register-btn:hover {
+    background-color: brown;
+}
+
+.login-part .signin-btn {
+    position: absolute;
+    background-color: rgb(176, 187, 197);
+    color: black;
+    font-size: large;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    height: 20px;
+
+    margin-top: 2.7rem;
+    left: 1rem;
+
+    /*for text*/
+    transform: skewX(10deg);
+}
+
+.login-part .signin-btn:hover {
+    background-color: darkslategrey;
+}
+
+.top-right .business-btn {
+    position: absolute;
+    background-color: white;
+    color: dimgray;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    padding: 0;
+    /* right: -60rem; */
+    margin-left: -10rem;
+    margin-top: -3.3rem;
+}
+.top-right .business-btn:hover {
+    background-color: rgb(176, 187, 197);
+}
+
+/*content*/
+.h-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: rgb(0, 34, 51);
+}
+
+.h-content img {
+    padding-left: 0;
+    width: 25%;
+    height: 25%;
+}
+
+.header-content {
+    position: relative;
+    background-color: rgb(0, 34, 51);
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    max-width: 100%;
+    height: auto;
+    padding-left: 21rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+
+.header-content .red-title {
+    font-size: xx-large;
+    color: red;
+    background-color: rgb(0, 34, 51);
+    text-align: left;
+    margin: 0 0 0;
+    
+}
+
+.header-content .white-title {
+    font-size: xx-large;
+    color: white;
+    background-color: rgb(0, 34, 51);
+    text-align: left;
+    margin: 0 0 0;
+}
+
+.header-content .search-part {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.search-part .search-box {
+    width: 300px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.search-part .search-btn {
+    background-color: red;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+    width: 100px;
+    height: 30px;
+}
+
+.search-part .search-btn:hover {
+    background-color: brown;
+}
+
+.header-content .courses-link {
+    font-size: large;
+    color: gray;
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+/*university part*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.horizontalScroll {
+    width: 200%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 3rem;
+
+    /* overflow: auto; */
+}
+
+.right
+{
+    right: 800px;
+}
+.right1
+{
+    right: 1600px;
+}
+
+.left {
+    right: 800px;
+}
+
+.left1 {
+    right: 0;
+}
+
+.left-btn {
+    background-color: rgb(249, 248, 248);
+    padding: 7px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left-btn:hover {
+    background-color: black;
+}
+
+.right-btn {
+    background-color: rgb(249, 248, 248);
+    padding: 7px;
+    border: 0;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.right-btn:hover {
+    background-color: black;
+}
+
+.horizontal-scroll a {
+    cursor: pointer;
+}
+
+.uni-list{
+    text-decoration: underline solid gray;
+    font-size: large;
+    color: black;
+    margin-top: 1rem;
+}
+.uni-list:hover {
+    text-decoration: underline solid black;
+}
+
+/*info label*/
+.header .info-label {
+    position: absolute;
+    width: 45%;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    font-size: larger;
+    text-align: right;
+    z-index: 1;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+
+    transform: skewX(-10deg);
+}
+
+.search-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .login-part{
+        transform: skewX(10deg);
+    }
+
+    .signin-btn {
+        transform: skewX(-10deg);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .top-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .top-left .courses-dropdown {
+        display: none;
+    }
+
+    .top-left .programs-dropdown {
+        display: none;
+    }
+
+    .sch-btn {
+        display: none;
+    }
+
+    .top-right {
+        display: none;
+    }
+
+    .horizontal-scroll {
+        width: 90%; 
+    }
+
+    .h-content img {
+        display: none;
+    }
+
+    .header-content {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .search-part .search-box {
+        width: 30vw;
+        margin-right: 1rem;
+    }
+
+    .header .info-label {
+        font-size: small;
+        width: 70%;
+    }
+
+    .top-search-box {
+        display: none;
+    }
+
+    .search-icon {
+        display: block;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1149px){
+    .logo {
+        position: absolute;
+        left: 0;
+    }
+
+    .top-search-box {
+        position: absolute;
+        left: 30rem;
+    } 
+}

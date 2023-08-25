@@ -1,0 +1,104 @@
+.footer {
+    position: relative;
+    background-color: white;
+}
+
+.footer-inner {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.logo {
+    cursor: pointer;
+    width: 70px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 9px;
+    font-size: larger;
+}
+
+.footer-title a:hover {
+    text-decoration: underline;
+}
+
+.lang-select {
+    height: 2rem;
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.lang-row button {
+    height: 2rem;
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.lang-row button:hover {
+    background-color: black;
+    color: white;
+}
+
+.app-part {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-btn {
+    height: 2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+/*375 - everything on 1 column*/
+/*600 - 2 column - last row column*/
+/*990 - 3 column - language part new row*/
+
+@media screen and (max-width: 376px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 375px){
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 990px) and (min-width:599px){
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (orientation: landscape) {
+   
+}

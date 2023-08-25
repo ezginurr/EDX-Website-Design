@@ -1,0 +1,146 @@
+<!--header-->
+
+<header class="header">
+    <!--top-->
+    <div class="header-top">
+        <!--left-->
+        <div class="top-left">
+            <!--logo-->
+            <mat-icon class="menu-icon" style="color: rgb(0, 34, 51);">menu</mat-icon>
+            <a href="#" class="logo"><img src="../../../../assets/images/edx-logo.svg" alt="edx logo"></a>
+            
+            <!--hoverable dropdowns - - -->  
+            <div class="courses-dropdown">
+                <a href="#" class="courses-dropbtn">Courses</a>
+                <div class="courses-dropdown-content">
+                    <div class="courses-dropdown-top">
+                        <h1>Courses by Subject</h1>
+                        <button href="#">View All Courses</button>
+                    </div>
+                    <ul>
+                        <a href="#">Architecture<br></a>
+                        <a href="#">Art & Culture<br></a>
+                        <a href="#">...</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Design<br></a>
+                        <a href="#">Economics & Finance<br></a>
+                        <a href="#">...</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Food & Nutrition<br></a>
+                        <a href="#">Health & Safety<br></a>
+                        <a href="#">...</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Medicine<br></a>
+                        <a href="#">Music<br></a>
+                        <a href="#">...</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="programs-dropdown">
+                <a href="#" class="programs-dropbtn">Programs&Degrees</a>
+                <div class="programs-dropdown-content">
+                    <div class="programs-dropdown-top">
+                        <h1>Pathways for your advancement</h1>
+                        <button href="#">Compare Programs</button>
+                    </div>
+                    <ul>
+                        <div>
+                            <a href="#">Executive Education</a>
+                            <p>Short courses to develop leadership skills</p>
+                        </div>
+                        <div>
+                            <a href="#">Professional Certificates</a>
+                            <p>From employers or universities to build today's in-demand skills</p>
+                        </div>
+                        <div>
+                            <a href="#">Master's Degrees</a>
+                            <p>Online degree programs from top universities</p>
+                        </div>
+                        <div>
+                            <a href="#">MicroMasters® Programs</a>
+                            <p>Graduate-level, for career advancement or a degree path</p>
+                        </div>
+                        <div>
+                            <a href="#">Bachelor's Degrees</a>
+                            <p>Begin or complete a degree; fully online</p>
+                        </div>
+                        <div>
+                            <a href="#">MicroBachelors® Programs</a>
+                            <p>Undergraduate-level, for career advancement or a degree path</p>
+                        </div>
+                        <div>
+                            <a href="#">XSeries</a>
+                            <p>Series of courses for a deep understanding of a topic</p>
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="sch-btn">Schools&Partners</a>
+            <input placeholder="What do you want to learn?" class="top-search-box"/>
+            <mat-icon class="search-icon" style="color: rgb(0, 34, 51);">search</mat-icon>
+            <button class="top-search-btn">Search</button>
+        </div>
+
+        <!--right-->
+        <div class="top-right">
+            <div class="login-part">
+                <a href="#" class="register-btn">Register for free</a>
+                <a href="#" class="signin-btn">Sign in</a>
+            </div>
+            <a href="#" class="business-btn">edx for Business</a>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="h-content">
+        <div class="header-content">
+            <p class="white-title">Start learning from</p>
+            <p class="red-title">the world's best institutions</p>
+            <div class="search-part">
+                <input placeholder="Search our 3000+ courses" class="search-box"/>
+                <a href="#" class="search-btn">Search</a>
+            </div>
+            <a href="#" class="courses-link">Explore all courses</a>
+        </div>
+        <img src="../../../../assets/images/header.webp" alt="">
+    </div>
+
+    <!--label-->
+    <p class="info-label">440,167 people are learning on edX today</p>
+    
+    
+    
+    <!--university part-->
+    <div class="container">
+        <button class="left-btn" *ngIf="count != 0 " (click)="counter('c-left')"><mat-icon style="color: black">arrow_back</mat-icon></button>
+        <div style="overflow: hidden; width: 70%;">
+            <div id="scrolling-element" class="horizontalScroll" [ngClass]="{right:right,right1:right1,left:left,left1:left1}">
+                <a href="#"><img src="../../../../assets/images/massachusetts.webp"></a>
+                <a href="#"><img src="../../../../assets/images/harvard.webp"></a>
+                <a href="#"><img src="../../../../assets/images/berkeley.webp"></a>
+                <a href="#"><img src="../../../../assets/images/texas.webp"></a>
+                <a href="#"><img src="../../../../assets/images/boston.webp"></a>
+                <a href="#"><img src="../../../../assets/images/maryland.webp"></a>
+                <a href="#"><img src="../../../../assets/images/australian.webp"></a>
+                <a href="#"><img src="../../../../assets/images/curtin.webp"></a>
+                <a href="#"><img src="../../../../assets/images/tudelft.webp"></a>
+                <a href="#"><img src="../../../../assets/images/georgetown.webp"></a>
+            </div>
+        </div>
+        <button class="right-btn" *ngIf="count != 2" (click)="counter('c-right')"><mat-icon style="color: black">arrow_forward</mat-icon></button> 
+    </div>
+
+    <div style="display: flex; align-items: center;">
+        <a href="#" class="uni-list" style="margin-left: 35%;">Learn from more than 160 member universities</a>
+    </div>
+
+
+</header>
+

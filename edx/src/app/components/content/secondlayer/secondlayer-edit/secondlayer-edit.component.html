@@ -1,0 +1,95 @@
+<!--second layer - explore top courses-->
+<section class="content">
+    <div class="content-inner">
+        <h2 class="title">Explore top courses</h2>
+
+        <div class="btn-group">
+            <button onclick="document.getElementById('computer-science').style.display='block';
+                            document.getElementById('data-science').style.display='none';" class="btn">Computer Science</button>
+            <button onclick="document.getElementById('data-science').style.display='block';
+                            document.getElementById('computer-science').style.display='none';" class="btn">Data Science</button>
+            <button onclick="f2()" class="btn">Business</button>
+            <button onclick="selecteditem=true" class="btn">Healthcare</button>
+            <button onclick="func()" class="btn">Communication</button>
+        </div>
+        <!--computer science content-->
+        <div id="computer-science" style="display: block;"> <!--*ngIf="selecteditem==1"> id="computer-science" style="display: none;">-->
+            <div class="scroll-cards">
+                <div class="card" style="background-color: rgb(0, 34, 51);">
+                    <img class="card-img" src="../../../../../assets/images/2.1.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.1.2.webp" alt="">
+                    <h5 class="card-title" style="color: white;">Google Cloud Computing Foundations</h5>
+                    <p class="card-text" style="color: white;">Google Cloud</p>
+                    <button class="card-btn">Profeddional Certificate</button>
+                    <a href="#" class="card-link" style="color: white;">4 courses</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.2.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.2.2.webp" alt="">
+                    <h5 class="card-title">Introduction to Blockchain</h5>
+                    <p class="card-text">IBM</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.3.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.3.2.webp" alt="">
+                    <h5 class="card-title">Programming for Everybody (Getting Started with Python)</h5>
+                    <p class="card-text">MichiganX</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.4.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.1.2.webp" alt="">
+                    <h5 class="card-title">Google Cloud Computing Foundations: Cloud Computing Fundamentals</h5>
+                    <p class="card-text">Google Cloud</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+            </div>
+        </div>
+
+        <!--data science content-->
+        <div id="data-science" style="display: none;"><!--</div>*ngIf="selecteditem==2"> id="data-science" style="display: none;"> -->
+            <div class="scroll-cards">
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.2.1.1.jpg" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.2.1.2.webp" alt="">
+                    <h5 class="card-title">Introduction to Analytics Modeling</h5>
+                    <p class="card-text">GTx</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.2.2.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.2.2.webp" alt="">
+                    <h5 class="card-title">Machine Learning with Python: A Practical Introduction</h5>
+                    <p class="card-text">IBM</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.2.3.1.jpg" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.2.3.2.webp" alt="">
+                    <h5 class="card-title">Introduction to Actuarial Science</h5>
+                    <p class="card-text">ANUX</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="../../../../../assets/images/2.2.4.1.webp" alt="">
+                    <img class="sub-img" src="../../../../../assets/images/2.2.4.2.webp" alt="">
+                    <h5 class="card-title">The Essentials of Data Literacy Online Course</h5>
+                    <p class="card-text">DavidsonX</p>
+                    <a href="#" class="card-link">course</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <button class="layer-btn">Explore more Computer Science courses</button>
+        </div>
+
+    </div>
+</section>

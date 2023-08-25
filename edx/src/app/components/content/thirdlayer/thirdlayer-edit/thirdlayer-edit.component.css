@@ -1,0 +1,142 @@
+.content {
+    position: relative;
+    background-color: rgb(0, 34, 51);
+}
+
+.content-inner {
+    width: 70%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.textcolumn-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.textcolumn-21 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10rem;
+}
+
+.text-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.small-title {
+    font-size: larger;
+    color: white;
+}
+
+.small-text {
+    font-size: larger;
+    color: white;
+}
+
+.big-title {
+    font-size: 47px;
+    color: white;
+}
+
+.big-text {
+    font-size: x-large;
+    color: white;
+    padding: 0;
+}
+
+.link-btn {
+    background-color: red;
+    width: 4rem;
+    height: 2rem;
+    transform: skewX(-10deg);
+    margin-left: auto;
+}
+
+.link-btn:hover {
+    background-color: brown;
+}
+
+.layer-btn {
+    background-color: rgb(0, 34, 51);
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.layer-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1500px)  and (min-width: 1199px){
+    .img-11{
+        width: 30vw;
+        height: 50vw;
+    }
+
+    .img-22{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .big-title {
+        font-size: 30px;
+        color: white;
+    }
+
+    .small-text {
+        font-size: small;
+        color: white;
+    }
+
+    .big-text {
+        font-size: larger;
+        color: white;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid img{
+        display: none;
+    }
+
+    .textcolumn-21 {
+        padding-left: 0;
+    }
+
+    .big-title {
+        font-size: 30px;
+        color: white;
+    }
+
+    .small-text {
+        font-size: small;
+        color: white;
+    }
+
+    .big-text {
+        font-size: larger;
+        color: white;
+        padding: 0;
+    }
+}
